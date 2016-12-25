@@ -16,8 +16,9 @@ var app = app || {};
 		template: _.template($('#item-template').html()),
 
 		// The DOM events specific to an item.
-		events: {
+		events: { 
 			'click .toggle': 'toggleCompleted',
+			'click .edit-btn': 'edit',
 			'dblclick label': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
